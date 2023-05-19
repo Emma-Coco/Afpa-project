@@ -1,0 +1,745 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*VERSION MOBILE*/
+
+@media screen and (max-width: 768px) {
+    /* règles de style pour les écrans de largeur maximale de 768 pixels */
+  }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*MON CSS*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    background-color: white;
+    width: 100%;
+    
+
+}
+
+.wrapper{
+    max-width: 1246px;
+    margin: auto;
+}
+
+/*HEADER*/
+
+header{
+	background: #EDE0E0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	top: 0;
+    position: sticky;
+    z-index: 4;
+    justify-content: center;
+} 
+
+
+.banner {
+    width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+  
+}
+
+.logo{
+    max-width: 160px;
+    min-width: 60px;
+    margin-right: 10px;
+}
+
+.logo img{
+    width: 100%;
+
+}
+
+
+header .banner nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner nav ul{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner nav ul li{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .banner nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn{
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.btn a{
+    background-color: #86BC24;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 60px 15px 60px;
+    margin-left: 20px;
+}
+
+/*BARRE DE RECHERCHE*/
+
+.search{
+    width: 100%;
+    background-color: #81655D;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.searchbox{
+    padding-bottom: 10px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.searchbox form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: white;
+  }
+
+
+  
+.search-container input[type="text"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 60px;
+  }
+  
+.search-container button[type="submit"] {
+    display: flex;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    justify-content: left;
+  }
+
+  .search-container svg{
+    max-width: 50px;
+  }
+
+
+
+.advanced-search {
+    text-align: end;
+    margin-right: 50px;
+}
+
+.advanced-search a{
+    color: #86BC24;
+    font-size: 20px;
+}
+
+.formations-button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formations-button a{
+    background-color: #9BCD67;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 130px;
+    padding-right: 130px;
+    border-radius: 30px;
+}
+
+/*LIENS sous barre de recherche*/
+
+.link{
+    width: 100%;
+    margin: auto;
+    text-align: end;
+
+}
+
+.link ul{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+
+.link ul li svg{
+    margin-right: 5px;
+    margin-left: 30px;
+}
+
+.link ul li a{
+    font-size: 20px;
+    color: #9D9797;
+    margin-bottom: 60px;
+    margin-top: 7px;
+}
+
+/*CONTENU FORMATIONS ET IMAGES*/
+
+.DescriptionBloc{
+    display: flex;
+    margin: 0 auto;
+}
+.ReverseFlex{
+    flex-direction: row-reverse;
+}
+
+.ReverseFlex .GreenBloc{
+    background-color: #E5F3E2;
+    width: 55%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: -5%;
+    position: relative;
+    z-index: 2;
+
+}
+
+.illustration{
+    display: flex;
+    max-width: 50%;
+    justify-content: left;
+}
+
+.GreenBloc{
+    background-color: #E5F3E2;
+    width: 55%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 20px 10px 20px 10px;
+    padding-left: 20px;
+    margin-left: -5%;
+    
+}
+
+.GreenBloc h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.GreenBloc h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.GreenBloc ul.list{
+
+    margin-bottom: 30px;
+    list-style:disc;
+    margin-left: 100px;
+}
+
+
+.GreenBloc ul.list li p{
+    font-size: 20px;
+    margin: 0px auto 20px 0;
+}
+
+.DiscoverButton{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.discover{
+    background-color: #9BCD67;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 60px 15px 60px;
+}
+
+.content{
+    margin-bottom: 70px;
+}
+
+/*POURQUOI CHOISIR L'AFPA*/
+
+.WhyAfpaBanner{
+    background-image: url(img/banner1.png);
+    margin-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.WhyAfpaBanner h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.WhyAfpaBanner ul {
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.WhyAfpaBanner ul li {
+    max-width: 240px;
+    text-align: center;
+}
+
+.WhyAfpaBanner ul li a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*L'AFPA EN QUELQUES CHIFFRES*/
+
+.chiffres{
+    font-size: 30px;
+}
+
+.AfpaNumbers{
+    width: 100%;
+    background-image: url(img/banner2.png);
+    margin-bottom: 70px;
+    padding: 40px 40px 20px 40px;
+}
+
+.col{
+    width: 100%;
+    display: flex;
+    column-count: 3;
+    
+}
+
+.AfpaNumbers .col ul{;
+
+}
+
+.AfpaNumbers h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.col1{
+    width: 33.33%;
+}
+
+.col1 li {
+    margin-bottom: 20px;
+
+}
+
+.col2{
+    width:33.33%;
+    padding-left: 100px;
+}
+
+.col2 li{
+    margin-bottom: 20px;
+}
+
+.col3{
+    display: flex;
+    width: 33.33%;
+    text-align: right;
+    align-items: center;
+    justify-content: end;
+}
+
+.col3 a.more{
+    display: flex;
+    background-color: #9BCD67;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 60px 15px 60px;
+
+}
+
+.enquête{
+    color: #8F8686;
+    font-size: 15px;
+}
+
+
+
+/*POSTS*/
+
+.list-post{
+    position: relative;
+}
+
+.list-post ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.list-post ul li{
+	background-color: #F0EBEB;
+	border-radius: 18px;
+	overflow: hidden;
+	width: calc( (100% / 3) - 60px);
+	margin-bottom: 70px;
+	position: relative;
+}
+.list-post ul li img{
+	width: 100%;
+	display: block;
+}
+
+.box-title{
+    padding: 0 30px;
+}
+
+.box-title h3{
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.box-title p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.next{
+    position: absolute;
+    display: flex;
+    color: #D126B6;
+    font-size: 25px;
+    font-weight: 600;
+    justify-content: end;
+    margin: 30px 0px;
+    bottom: 0;
+}
+
+
+
+/* Tiny Carousel : affichage des logos partenaires*/
+
+.partenaires{
+    width: 100%;
+    background-image: url(img/banner3.png);
+    padding: 40px 0px;
+}
+
+
+.text h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.text p {
+    margin: 0 auto 20px auto;
+    font-size: 20px;
+    max-width: 620px;
+}
+
+.text{
+    text-align: center;
+}
+
+.container img{
+    max-width: 150px;
+}
+
+.carousel1{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.carousel__container{
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.3s;
+}
+
+.carousel__container::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel__item{
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__next, .carousel__prev {
+    position: absolute;
+    width: 23px;
+    height: 45px;
+    background: url(img/VectorRight.svg) center center no-repeat;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: -5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.carousel__next, .carousel__prev {
+    transform:scale(1.2);
+}
+
+.carousel__next{
+    margin-bottom: 5px;
+}
+
+.carousel__prev {
+    background-image: url(img/VectorLeft.svg);
+    right: auto;
+    left: 10px;
+}
+
+/*Visite virtuelle, avenir pro et réseaux*/
+
+
+.footer1{
+    padding: 40px 0px;
+    margin: 40px 0px;
+}
+
+.columns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.réseaux img{
+    width: 80px;
+}
+
+.VV{
+    display: inline-block;
+    width: 30%;
+}
+
+.AvenirPro{
+    width: 30%;
+}
+
+h4 a{
+    display: flex;
+    font-size: 23px;
+    color:#D126B6;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+h4 img{
+    width: 25px;
+    color: #D126B6;
+
+}
+
+.réseaux{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: -10px;
+}
+
+.réseaux p{
+    position: absolute;
+    right: 10%;
+    margin-top: 90px;
+    margin-right: -10px;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+.logos-footer{
+    display: flex;
+    justify-content: center;
+    background-color: #F0F5E7;
+    
+
+}
+
+.first-nav-footer{
+    margin: 70px 0 30px 0;
+}
+
+
+.first-nav-footer a{
+    color: #9D9797;
+}
+
+.nav-footer{
+    margin-bottom: 10px;
+}
+
+.nav-footer p{
+    font-size: 17px;
+}
+
+.nav-footer a{
+    color: #9D9797;
+    font-size: 17px;
+}
